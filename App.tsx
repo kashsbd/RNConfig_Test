@@ -1,14 +1,12 @@
 import React from 'react';
-import {SafeAreaView, Text, StyleSheet, View} from 'react-native';
+import {Text, StyleSheet, View} from 'react-native';
 import Config from 'react-native-config';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView>
-      <View style={styles.center}>
-        <Text style={styles.text}>Current Env: {Config.ENV}</Text>
-      </View>
-    </SafeAreaView>
+    <View style={styles.center}>
+      <Text style={styles.text}>Current Env: {Config.ENV}</Text>
+    </View>
   );
 }
 
